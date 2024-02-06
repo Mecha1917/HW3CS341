@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cheesecake Order</title>
+	 <script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+ 	 </script>
+	 <link rel="stylesheet" href="stylesheets/Blakea26_CSS2.css">
+	 <link rel="javascript" href="javascripts/Script1.js">
+</head>
+<body>
+
+<h1>Cheesecake Order Form</h1>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg/1200px-Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" alt="Wiki.com" width="128" height="128">
+<!-- Creates drop down -->
+<form action="" id="Form">
+	<p>Quantity Topping</p>
+	<div style="display: inline-block;">
+		<select name ="quantity" id="quantity">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+	</div>
+<!-- Creates Radio Buttons -->
+<div style="display: inline-block; vertical-align: top;">
+	<input type="radio" id="plain" name="topping" value="Plain">
+	<label for="plain">Plain</label>
+	<br>
+	
+	<input type="radio" id="cherry" name="topping" value="Cherry">
+	<label for="cherry">Cherry</label>
+	<br>
+
+	<input type="radio" id="chocolate" name="topping" value="Chocolate">
+	<label for="chocolate">Chocolate</label>
+	<br>
+</div>
+
+<br>
+
+<label for="notes">Notes:</label>
+<br>
+<textarea id="Notes" name="notes" rows="4" cols="50"></textarea>
+<br>
+
+<input type="submit" value="Order" id="Order">
+</form>
+
+<div class="hidden" id="OrderHidden">
+	<h4>Thank you! Your order has been placed.</h4>
+	<p id="topConfirm"></p>
+    <p id="quanConfirm"></p>
+    <p id="noteConfirm"></p>
+</div>
+
+<!-- Last Month Orders! -->
+
+<div class="dropdown"
+<h3>Orders For <span><button class="dropbtn" id="button">Jan</button></span></h3> 
+	<div class="dropdown-content">\
+		<a href="javascript:orderSetMonth('Jan');">Jan</a><br>
+		<a href="javascript:orderSetMonth('Feb');">Feb</a><br>
+		<a href="javascript:orderSetMonth('Mar');">Mar</a><br>
+		<a href="javascript:orderSetMonth('Apr');">Apr</a><br>
+		<a href="javascript:orderSetMonth('May');">May</a><br>
+		<a href="javascript:orderSetMonth('Jun');">Jun</a><br>
+		<a href="javascript:orderSetMonth('Jul');">Jul</a><br>
+		<a href="javascript:orderSetMonth('Aug');">Aug</a><br>
+		<a href="javascript:orderSetMonth('Sep');">Sep</a><br>
+		<a href="javascript:orderSetMonth('Oct');">Oct</a><br>
+		<a href="javascript:orderSetMonth('Nov');">Nov</a><br>
+		<a href="javascript:orderSetMonth('Dec');">Dec</a><br>
+	</div>
+</div>
+
+<ul>
+	<li>11 Cherry</li>
+	<li>17 Chocolate</li>
+	<li>31 Plain</li>
+</ul>
+</body>
+</html>
